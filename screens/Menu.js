@@ -2,7 +2,8 @@ import {StyleSheet, Text, View} from 'react-native'
 import React, {useState} from 'react'
 import {Appbar} from 'react-native-paper';
 import {Switch} from 'react-native-paper';
-import { MaterialIcons } from '@expo/vector-icons';
+import {MaterialIcons} from '@expo/vector-icons';
+
 
 const Menu = () => {
     const [isActive, setIsActive] = useState(false)
@@ -23,6 +24,7 @@ const Menu = () => {
         <Appbar.Header style={{backgroundColor: 'orange'}}>
         <Appbar.BackAction onPress={_goBack} color='white' />
         <Appbar.Content title="coachEMMY" color='white'/>
+        <Appbar.Action icon={'close'} color ='white' />
         </Appbar.Header>
 
         <View style= {styles.cardContainer}>
